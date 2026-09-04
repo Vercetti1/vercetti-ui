@@ -1,0 +1,20 @@
+@import 'tailwindcss';
+
+/* Imported by path because this app aliases @vercetti/ui to the library source
+   for hot reload. Consumers of the published package instead write:
+     @import '@vercetti/ui/tokens.css'; */
+@import '../../../packages/ui/src/styles/tokens.css';
+
+/* Tailwind only scans this app by default. The library's class names live
+   outside that graph, so register it explicitly or every component ships
+   unstyled. */
+@source '../../../packages/ui/src';
+
+@layer base {
+  body {
+    background-color: var(--vercetti-background);
+    color: var(--vercetti-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}

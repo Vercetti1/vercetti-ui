@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@vercetti/ui": ["../../packages/ui/src/index.ts"]
+    }
+  },
+  "include": ["src", "vite.config.ts"]
+}
