@@ -1,0 +1,4 @@
+# Monorepo: the root build compiles packages/ui first, then the docs site.
+[build]
+  command = "npm run build"
+  publish = "apps/docs/dist"
